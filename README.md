@@ -21,12 +21,12 @@ Esto es una solución de la [Results summary component challenge on Frontend Men
 
 ### Screenshot
 
-![results-summary-component]()
+![results-summary-component](https://github.com/GarciaRojasP/result-summary-component/assets/119550417/60bd6b8b-04c0-43cd-9436-b523ef7635f9)
 
 ### Links
 
-- Ver código: [results-summary-component]()
-- Ver demo: [results-summary-component]()
+- Ver código: [results-summary-component](https://github.com/GarciaRojasP/result-summary-component)
+- Ver demo: [results-summary-component](https://result-summary-component-rosy-seven.vercel.app/)
 
 ## Mi proceso
 

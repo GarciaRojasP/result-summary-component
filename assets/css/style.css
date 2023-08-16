@@ -1,0 +1,292 @@
+:root{
+
+    /*==================== COLOR PRIMARY ====================*/
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /*==================== COLOR PRIMARY WITH OPACITY====================*/
+    --light-red-opacity: hsla(0, 100%, 67%, 0.1);
+    --orangey-yellow-opacity: hsla(39, 100%, 56%, 0.1);
+   
+    --green-teal-opacity: hsla(166, 100%, 37%, 0.1);
+    --cobalt-blue-opacity: hsla(234, 85%, 45%, 0.1);
+
+    /*==================== COLOR GRADIENTS ====================*/
+    --light-slate-blue: hsl(252, 100%, 67%);    /*background*/
+    --light-royal-blue: hsl(241, 81%, 54%);       /*background*/
+    
+    --violet-blue: hsla(256, 72%, 46%, 1);     /*circle*/
+    --persian-blue: hsla(241, 72%, 46%, 0);    /*circle*/
+
+    /*==================== COLOR NEUTRAL ====================*/
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    --pale-blue-degrado: hsla(221, 100%, 96%,0.7);
+    
+    /*==================== TYPOGRAPHY ====================*/
+    --body: 'Hanken Grotesk', sans-serif;
+
+    /*==================== FONT ====================*/
+    --font-small: 16px;
+    --font-normal: 18px;
+
+    /*==================== FONT WEIGHT ====================*/
+    --w-medium: 500; 
+    --w-bold: 700; 
+    --w-extrabold: 800;
+
+    /*==================== lINE HEIGHT ====================*/
+    --line-height: 1.5;
+
+}
+
+/*==================== STYLE GENERAL ====================*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3{
+    margin:0;
+}
+
+body{
+    font-family: var(--body);
+    font-size: var(--font-normal);
+    line-height: var(--line-height);
+    background-color: var(--pale-blue);
+}
+
+.flex{
+    display: flex;
+    gap: 1rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1rem;
+}
+
+.main{
+    align-items: flex-start;
+    justify-items: center;
+    gap: 0;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/*==================== CARD ====================*/
+.card{
+    background-color: white;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 400px;
+    gap: 0;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px -10px var(--light-slate-blue);
+}
+
+
+/*==================== CARD__RESULT ====================*/
+.card__result{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(190deg, var(--light-slate-blue), var(--light-royal-blue) 85%);
+    padding: 35px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.result__title{
+    font-size: inherit;
+    font-weight: var(--w-bold);
+    color: var(--pale-blue-degrado);
+    
+}
+
+/*==================== CIRCLE ====================*/
+.circle{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+
+    background: linear-gradient(var(--violet-blue), var(--persian-blue));
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.percentage{
+    font-size: 4rem;
+    font-weight: var(--w-extrabold);
+}
+
+.percentage-total{
+    color: var(--pale-blue);
+    font-size: var(--font-small);
+    opacity: 0.3;
+
+    position: relative;
+    bottom: 15px;
+}
+
+.result__description{
+    max-width: 290px;
+}
+
+.description__title{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    font-weight: var(--w-bold);
+}
+
+.paragraph{
+    color: var(--pale-blue);
+    font-size: var(--font-small);
+    color: var(--pale-blue-degrado);
+}
+
+
+/*==================== CARD__SUMMARY ====================*/
+.card__summary{
+    flex-direction: column;
+    padding: 25px 30px 30px;
+}
+
+.title__summary{
+    font-size: inherit;
+}
+
+.summary__scores{
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.category{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.8em;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.reaction__background{
+    background-color: var(--light-red-opacity);
+}
+
+.memory__background{
+    background-color: var(--orangey-yellow-opacity);
+}
+
+.verbal__background{
+    background-color: var(--green-teal-opacity);
+}
+
+.visual__background{
+    background-color: var(--cobalt-blue-opacity);
+}
+
+.category__description{
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.category__name{
+    font-size: var(--font-small);
+    font-weight: var(--w-bold);
+}
+
+.category:nth-child(1) > .category__description > .category__name{
+    color: var(--light-red);
+}
+
+.category:nth-child(2) > .category__description > .category__name{
+    color: var(--orangey-yellow);
+}
+
+.category:nth-child(3) > .category__description > .category__name{
+    color: var(--green-teal);
+}
+
+.category:nth-child(4) > .category__description > .category__name{
+    color: var(--cobalt-blue);
+}
+
+.category_scores-value, .category__scores-total{
+    font-weight: var(--w-bold);
+}
+
+.category__scores-total{
+    opacity: 0.35;
+}
+
+.button{
+    color: var(--white);
+    background-color: var(--dark-gray-blue);
+    padding: 1em;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.button:hover{
+    background: linear-gradient(190deg, var(--light-slate-blue), var(--light-royal-blue) 85%);
+}
+
+@media screen and (min-width:768px) {
+    .main{
+        place-items: center;
+    }
+
+    /*==================== CARD ====================*/
+   .card{
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+        border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        -ms-border-radius: 35px;
+        -o-border-radius: 35px;
+    }
+
+   .card__result{
+        border-top-right-radius: 35px;
+    }
+
+    .circle{
+        margin: 1rem 0;
+        width: 170px;
+        height: 170px;
+    }
+
+    .result__description {
+        max-width: 230px;
+    }
+
+    .card__summary{
+        padding-top: 35px;
+    }
+    
+}

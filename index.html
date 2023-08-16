@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Results summary component</title>
+ 
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <main class="main grid">
+
+    <section class="card grid">
+      <section class="card__result flex">
+        <h1 class="result__title">Your Result</h1>
+        <div class="circle flex">
+          <p class="percentage">76</p>
+          <p class="percentage-total">of 100</p>
+        </div>
+        <div class="result__description">
+          <p class="description__title">Great</p>
+          <p class="paragraph">
+            You scored higher than 65% of the 
+            people who have taken these tests.
+          </p>
+        </div>
+      </section>
+
+      <section class="card__summary flex">
+        <h2 class="title__summary">Summary</h2>
+
+        <div class="summary__scores flex">
+          <div class="category reaction__background flex">
+            <div class="category__description flex">
+              <img class="category__img" src="assets/images/icon-reaction.svg" alt="">
+              <span class="category__name">Reaction</span>
+            </div>
+            <div class="category__percentage">
+              <span class="category_scores-value">80 </span>
+              <span class="category__scores-total">/ 100</span>
+            </div>
+          </div>
+
+          <div class="category memory__background flex">
+            <div class="category__description flex">
+              <img class="category__img" src="assets/images/icon-memory.svg" alt="">
+              <span class="category__name">Memory</span>
+            </div>
+            <div class="category__percentage">
+              <span class="category_scores-value">92 </span>
+              <span class="category__scores-total">/ 100</span>
+            </div>
+          </div>
+
+          <div class="category verbal__background flex">
+            <div class="category__description flex">
+              <img class="category__img" src="assets/images/icon-verbal.svg" alt="">
+              <span class="category__name">Verbal</span>
+            </div>
+            <div class="category__percentage">
+              <span class="category_scores-value">61 </span>
+              <span class="category__scores-total">/ 100</span>
+            </div>
+          </div>
+
+          <div class="category visual__background flex">
+            <div class="category__description flex">
+              <img class="category__img" src="assets/images/icon-visual.svg" alt="">
+              <span class="category__name">Visual</span>
+            </div>
+            <div class="category__percentage">
+              <span class="category_scores-value">72 </span>
+              <span class="category__scores-total">/ 100</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="button">Continue</button>
+      </section>
+      
+    </section>
+
+  </main>
+
+  
+
+</body>
+</html>
